@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaBeCo</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        }
+        header nav {
+            display: flex;
+            margin-right: 3rem; /* Adds consistent spacing for all links collectively */
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        .flag {
+            height: 20px;
+            margin-left: 10px;
+        }
+        nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 0.1rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        nav a {
+            color: #003865;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #f4f4f9;
+        }
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            margin-right: 2rem;
+        }
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #003865;
+        }
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(rgba(0, 56, 101, 0.8), rgba(0, 56, 101, 0.8)), url('./network-banner.png') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        section {
+            padding: 2rem;
+            margin: auto;
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+        .section-title {
+            color: #003865;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #003865;
+            color: white;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (min-width: 768px) {
+            nav {
+                display: flex !important;
+                flex-direction: row;
+                position: static;
+                box-shadow: none;
+                background: none;
+                border-radius: 0;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+       <!-- <img src="./logo.png" alt="DiaBeCo"> -->
+       <h2>DiaBeCo</h2>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav id="navMenu" style="display: none;">
+        <a href="project.html">Project</a>
+        <a href="partners.html">Partners</a>
+        <a href="news.html">News</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Diabetes Better Control</h2>
+    <p>An Integrated Digital Platform for Personalized Care, Data Privacy, and Predictive Health Insights.</p>
+</div>
+
+<section id="about">
+    <h2 class="section-title">About the Project</h2>
+    <p>
+        The proposed project aims to develop an integrated digital platform based on advanced technologies such as DT (Digital Twin), Solid (Social Linked Data), and PODs (Personal Online Datastores). This Cloud-based platform is designed to improve the management and treatment of diabetes mellitus while providing patients with tools to manage their health data and to cope with legal demands coming from GDPR as well as national data protection legislation. By utilizing ML (Machine Learning) models and patients' personal data, the system will enable accurate simulations to determine the diabetes risk index and optimized therapeutic interventions in terms of dietotherapy or improved physical activity. Additionally, patients will be provided with dedicated, secure personal spaces for autonomous data management, ensuring full control and respect for their privacy by exploiting federated learning so that no data is exchanged but weights of the locally trained models. The main objectives include the evolution of the digital model by integrating various data sources, continuous and predictive monitoring of vital parameters, personalization of therapies, improvement of patients' quality of life, and promotion of patient autonomy and empowerment.
+    </p>
+</section>
+
+<section id="impact">
+    <h2 class="section-title">Project Impact</h2>
+    
+    <h3>Scientific Impact</h3>
+    <ul>
+        <li><strong>Evolution of the Digital Model:</strong> Development of a complex digital model integrating data from multiple sources, including monitoring devices, electronic health records (EHR), pharmacological history, and behavioral information.</li>
+        <li><strong>Continuous and Predictive Monitoring:</strong> Implementation of a system that not only monitors patient vital parameters in near real-time but also employs Federated Learning (FL) predictive models to anticipate hypoglycemic and hyperglycemic episodes, ensuring timely interventions and preventing severe complications.</li>
+    </ul>
+    
+    <h3>Social Impact</h3>
+    <ul>
+        <li><strong>Personalized Therapies:</strong> Utilizing Digital Twin (DT) technology to simulate various therapeutic scenarios and provide personalized recommendations optimizing insulin therapy, nutrition, and physical activity, thereby enhancing treatment effectiveness and reducing long-term complications.</li>
+        <li><strong>Improved Quality of Life:</strong> Reducing the management burden on diabetic patients by providing decision-support tools that help them manage their condition more efficiently and less invasively, improving their quality of life and reducing concerns associated with diabetes management.</li>
+        <li><strong>Promoting Patient Autonomy and Empowerment:</strong> Enabling patients to fully control their data, including who can view and use it, thus reinforcing their role in clinical decision-making.</li>
+    </ul>
+    
+    <h3>Economic Impact</h3>
+    <ul>
+        <li><strong>Cost Efficiency:</strong> Increasing operational efficiency and reducing costs, ultimately enhancing the quality and accessibility of diabetes-related healthcare services and products.</li>
+    </ul>
+</section>
+
+<section id="details">
+    <h2 class="section-title">Project Details</h2>
+    <ul>
+        <li><strong>Duration:</strong> 12 months</li>
+        <li><strong>Project Acronym:</strong> DiaBeCo</li>
+        <li><strong>Project Title:</strong> Diabetes Better Control</li>
+        <li><strong>Technology Readiness Level:</strong> Initial TRL 3 → Final TRL 7</li>
+        <li><strong>Spoke:</strong> Spoke 9</li>
+        <li><strong>Research Topic:</strong> Applications of Digital Twin in Industry, Medicine, Environmental Sciences, Daily Life</li>
+        <li><strong>Partners:</strong>
+            <ul>
+                <li>I.T. Svil Srl (SME) – Gianvito Petrillo (<a href="mailto:Gianvito.petrillo@itsvil.it">Gianvito.petrillo@itsvil.it</a>)</li>
+                <li>CeRICT Scrl (ODR)</li>
+            </ul>
+        </li>
+        <li><strong>Funding:</strong> Programma I-NEST – PNRR, finanziato dall’Unione Europea, NextGenerationEU</li>
+    </ul>
+</section>
+
+<footer>
+    <p>For more information, contact <a href="mailto:Gianvito.petrillo@itsvil.it">Gianvito.petrillo@itsvil.it</a>.</p>
+    <p>&copy; 2025 DiaBeCo Project. All rights reserved.</p>
+</footer>
+
+
+<script>
+    let isMenuOpen = false;
+
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu');
+        isMenuOpen = !isMenuOpen;
+        navMenu.style.display = isMenuOpen ? 'flex' : 'none';
+    }
+</script>
+
+</body>
+</html>
+
+
+
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaBeCo Project</title>
+    <title>FRQGAN4AD Project - News</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -49,12 +49,7 @@
             display: flex;
             margin-right: 3rem;
         }
-        header nav a {
-            color: #003865;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
-        }
+        
         header nav a:hover {
             text-decoration: underline;
         }
@@ -96,16 +91,25 @@
             font-size: 1.8rem;
             font-weight: 700;
         }
-        .image-placeholder {
-            height: 200px;
-            background-color: #ddd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 1rem;
+        .news-post {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f9f9fc;
+            border: 1px solid #ddd;
             border-radius: 8px;
+        }
+        .news-post h3 {
+            color: #003865;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .news-post p {
+            line-height: 1.6;
+        }
+        .hashtags {
+            color: #0073b1;
+            font-weight: 500;
         }
         footer {
             text-align: center;
@@ -157,37 +161,14 @@
     </nav>
 </header>
 
+<section id="news">
+    <h2 class="section-title">News</h2>
+    
+    <!-- Example News Post -->
+    <div class="news-post">
 
-<section id="it-svil">
-    <h2 class="section-title">I.T. Svil Srl</h2>
-    <img src="itsvil.png" style="width:90%; border-radius:8px;">
-    <p>
-        I.T. Svil s.r.l. is an innovative SME operating in the Digital Health sector, both in IT services and research. The company thrives on continuous technological innovation, leveraging microservices architectures, Cloud Native solutions, UX/UI, SPA, PWA, AI, IoT, and Cybersecurity.
-    </p>
-    <p>
-        As a technological partner, I.T. Svil will contribute by designing the IT system at the core of this project.
-    </p>
+    </div>
 </section>
-
-<section id="cerict">
-    <h2 class="section-title">CeRICT Scrl</h2>
-    <img src="cerict.jpg" style="width:90%; border-radius:8px;">
-    <p>
-        The Regional Center for Information Communication Technology (CeRICT Scrl) is a research organization that designs and develops innovative services and products, integrating efforts with universities, public research centers, businesses, and industrial research institutions.
-    </p>
-    <p>
-        CeRICT's role includes the design of the Digital Twin, machine learning models, and the utilization of pods.
-    </p>
-</section>
-
-<section id="unisa">
-    <h2 class="section-title">University of Salerno (UNISA)</h2>
-    <img src="unisa.jpg" style="width:100%; border-radius:8px;">
-    <p>
-        Located in Fisciano, Italy, the University of Salerno (UNISA) is a prominent academic institution known for its commitment to excellence in education and research. UNISA offers a wide range of programs and has a strong focus on fostering innovation and collaboration across various disciplines.
-    </p>
-</section>
-
 
 <footer>
     <p>For more information, contact <a href="mailto:Gianvito.petrillo@itsvil.it">Gianvito.petrillo@itsvil.it</a>.</p>
@@ -203,5 +184,6 @@
         navMenu.style.display = isMenuOpen ? 'flex' : 'none';
     }
 </script>
+
 </body>
 </html>

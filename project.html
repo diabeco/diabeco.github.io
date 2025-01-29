@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaBeCo Project</title>
+    <title>FRQGAN4AD Project</title>
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -96,16 +96,15 @@
             font-size: 1.8rem;
             font-weight: 700;
         }
-        .image-placeholder {
-            height: 200px;
-            background-color: #ddd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 1rem;
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .image-container img {
+            max-width: 20%;
+            height: auto;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
@@ -157,43 +156,44 @@
     </nav>
 </header>
 
-
-<section id="it-svil">
-    <h2 class="section-title">I.T. Svil Srl</h2>
-    <img src="itsvil.png" style="width:90%; border-radius:8px;">
+<section id="project">
+    <h2 class="section-title">The DiaBeCo Project</h2>
     <p>
-        I.T. Svil s.r.l. is an innovative SME operating in the Digital Health sector, both in IT services and research. The company thrives on continuous technological innovation, leveraging microservices architectures, Cloud Native solutions, UX/UI, SPA, PWA, AI, IoT, and Cybersecurity.
+        According to ISTAT data published in 2022, diabetes is a chronic, progressive, and disabling disease affecting between 6% and 8% of the Italian population. Managing diabetes effectively requires periodic monitoring of various health indicators to control risk factors and prevent complications that can significantly impact mortality and quality of life.
     </p>
+    <img src="contesto.jpg" style="width:40%; border-radius:8px; display:block; margin:auto;">
+    
+    <h3 class="section-title">Technological Advancements</h3>
     <p>
-        As a technological partner, I.T. Svil will contribute by designing the IT system at the core of this project.
+        The healthcare sector has increasingly adopted wearable devices, IoT sensors, and other monitoring technologies to collect health parameters for risk assessment and decision support in diabetes management. AI-driven solutions and rule-based approaches (IF-THEN-ELSE) have been used to process data and assist healthcare professionals in optimizing treatment strategies.
     </p>
+    <img src="contesto2.jpg" style="width:30%; border-radius:8px; display:block; margin:auto;">
+    
+    <h3 class="section-title">Innovation and Objectives</h3>
+    <p>
+        The DiaBeCo project aims to develop a digital platform integrating cutting-edge technologies such as:
+    </p>
+    <ul>
+        <li><strong>Digital Twin (DT):</strong> Advanced mathematical models and Federated Learning algorithms to simulate disease progression and response to therapies, diet, and lifestyle changes.</li>
+        <li><strong>Solid (Social Linked Data) and PODs (Personal Online Datastores):</strong> Decentralized data management that enables patients to control access to their health data, enhancing privacy and security.</li>
+    </ul>
+    <img src="progetto.jpg" style="width:70%; border-radius:8px; display:block; margin:auto;">
+    
+    <p>
+        The project’s innovative potential lies not only in real-time monitoring of vital and health parameters but also in leveraging predictive Federated Learning models to anticipate hypoglycemia and hyperglycemia episodes. This approach ensures timely interventions, preventing severe complications.
+    </p>
+    
+    <h3 class="section-title">Impact on Diabetes Management</h3>
+    <p>
+        Utilizing Digital Twin technology allows for personalized recommendations, optimizing insulin therapy, nutrition, and physical activity, ultimately improving treatment effectiveness and reducing long-term complications. Additionally, minimizing the management burden on diabetic patients enhances their quality of life and alleviates concerns related to disease management.
+    </p>
+    <img src="progetto2.jpg" style="width:70%; border-radius:8px; display:block; margin:auto;">
 </section>
-
-<section id="cerict">
-    <h2 class="section-title">CeRICT Scrl</h2>
-    <img src="cerict.jpg" style="width:90%; border-radius:8px;">
-    <p>
-        The Regional Center for Information Communication Technology (CeRICT Scrl) is a research organization that designs and develops innovative services and products, integrating efforts with universities, public research centers, businesses, and industrial research institutions.
-    </p>
-    <p>
-        CeRICT's role includes the design of the Digital Twin, machine learning models, and the utilization of pods.
-    </p>
-</section>
-
-<section id="unisa">
-    <h2 class="section-title">University of Salerno (UNISA)</h2>
-    <img src="unisa.jpg" style="width:100%; border-radius:8px;">
-    <p>
-        Located in Fisciano, Italy, the University of Salerno (UNISA) is a prominent academic institution known for its commitment to excellence in education and research. UNISA offers a wide range of programs and has a strong focus on fostering innovation and collaboration across various disciplines.
-    </p>
-</section>
-
 
 <footer>
     <p>For more information, contact <a href="mailto:Gianvito.petrillo@itsvil.it">Gianvito.petrillo@itsvil.it</a>.</p>
     <p>&copy; 2025 DiaBeCo Project. All rights reserved.</p>
 </footer>
-
 <script>
     let isMenuOpen = false;
 
